@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #terms-link {
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: black; 
+        }
+    </style>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form id="myForm">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+  
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+  
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Enter your phone"><br><br>
+  
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+   
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="">Choose your country</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select><br><br>
+   
+  <input type="checkbox" id="terms" name="terms">
+  <label for="terms">I agree to the <a href="terms-and-conditions.html" id="terms-link">Terms and Conditions</a></label><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
